@@ -12,6 +12,7 @@ public class AccessController {
 	
 	public enum Operation {OP_INSERT,OP_UPDATE,OP_DELETE,OP_UPSERT}
 	
+	//Adding more comments to the file
 	// CRUD/FLS-safe DML operations. These honor the CRUD and FLS permissions of the running user
 	public static void insertAsUser(sObject obj){performDMLOperation(new List<sObject>{obj},Operation.OP_INSERT);}
 	public static void updateAsUser(sObject obj){performDMLOperation(new List<sObject>{obj},Operation.OP_UPDATE);}
